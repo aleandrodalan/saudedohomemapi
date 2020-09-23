@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="unidades_saude" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="38ce0ecf-e0ed-4604-8d88-e9f3718546b2">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="nome" class="java.lang.String"/>
+	<field name="telefone" class="java.lang.String"/>
+	<field name="endereco" class="br.com.loglab.models.Endereco"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="105" splitType="Stretch">
+			<image>
+				<reportElement positionType="FixRelativeToBottom" stretchType="ContainerBottom" x="-9" y="11" width="139" height="68" uuid="2d24a510-d2db-44b3-a86c-be8a50258638"/>
+				<imageExpression><![CDATA["/home/aleandro/Downloads/logo_cuiaba.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="137" y="1" width="368" height="22" uuid="9f22218f-6687-497a-be83-ad8f7e875d50">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Secretaria Municipal de Saúde]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="137" y="23" width="368" height="22" uuid="dbdac7f8-5888-460b-b4cc-32a37bda7609">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Diretoria de Ação Primária]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="137" y="45" width="368" height="22" uuid="d52cd399-4f70-4524-a36a-4415499f13d6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Política Municipal da Saúde do Homem]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="137" y="79" width="368" height="22" uuid="63a533ed-c710-4857-933b-5f4c8913d4dd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relatório de Unidades de Saúde]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="7" splitType="Stretch">
+			<line>
+				<reportElement x="-12" y="4" width="574" height="1" uuid="7278e666-b28c-4626-b6ca-9d57129defa1"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement key="" x="-9" y="0" width="239" height="20" uuid="e6c6f178-b963-4497-ba1f-f4a594c9fb5e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9155293c-bbc1-4e67-986a-d1229425890b"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="236" y="1" width="100" height="19" uuid="bf2c4f66-2c1e-4a51-837a-a2b4fc8b46f4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TELEFONE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="348" y="1" width="157" height="19" uuid="f7bf6a96-1632-4d08-98a0-504866648efe"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CIDADE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="512" y="1" width="50" height="19" uuid="8626cb9b-9781-4da5-ac2e-05e2da231483">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="63cc817d-7993-463e-bd2b-64ab86d12b42"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ESTADO]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-12" y="21" width="574" height="1" uuid="b22aa792-8fd0-4ba3-a63c-bad6be23381a"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="17" splitType="Stretch">
+			<textField>
+				<reportElement x="-9" y="2" width="239" height="14" uuid="59bc8ed6-ac6b-46a2-ba98-c098ba266ebc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9155293c-bbc1-4e67-986a-d1229425890b"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="236" y="2" width="100" height="14" uuid="1dc260de-948a-4f62-9071-3982f2ac8376">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cae0d24b-1172-41e6-b485-32c97807612b"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{telefone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="2" width="157" height="14" uuid="bc8e3a20-3692-4671-8ee3-94368947bb3e"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{endereco}.getCidade()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="512" y="1" width="50" height="15" uuid="e96fe120-775b-42e2-bb45-460231a77557"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{endereco}.getUf()]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="360" y="0" width="100" height="20" uuid="9a9b72ee-2400-4abc-b1c3-9ef6fe2af7fc"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Página " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="461" y="0" width="100" height="20" uuid="c9189f71-040b-41ec-8cee-05c4a2a293b9"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[" de " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEE, dd &apos;de&apos; MMMMM &apos;de&apos; yyyy">
+				<reportElement x="-9" y="1" width="189" height="19" uuid="1d91e38a-47f5-49d4-8092-608381dcee4b"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-12" y="0" width="574" height="1" uuid="291c5519-83b4-4dd4-b930-9aed1fd89547"/>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
